@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza constructor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body link="white">
+    <h1 class="h1">Конструктор</h1>
+    <div class="constructor">
+        <div class="order">
+            <h2 class="order-h">Ваш заказ</h2>
+            <p class="order-size">1. Размер</p>
+            <p class="order-size-p" id="order-size-p">Не выбрано</p>
+            <p class="order-cheze">2. Сыр</p>
+            <p class="order-cheze-p" id="order-cheze-p">Не выбрано</p>
+            <p class="order-cheze-p" id="order-cheze-p2">Не выбрано</p>
+            <p class="order-meat">3. Мясо и овощи</p>
+            <p class="order-meat-p" id="order-meat-p">Не выбрано</p>
+            <p class="order-meat-p" id="order-meat-p2">Не выбрано</p>
+            <p class="order-sauce">4. Соус</p>
+            <p class="order-sauce-p" id="order-sauce-p">Не выбрано</p>
+            <p class="price">Цена</p>
+            <p class="price-p" id="price-p"></p>
+            <p class="order-button-p" id="order-button" style="display: none;"><button class="order-button" id="order-button" target="_blank">Заказать</button></p>
+            <img src="img/pizza1.png" alt="" class="pizza-img" id="pizza-img" width="100px" height="100px">
+        </div>
+        <div class="name">
+            <p class="span1-p"><span class="span1">Шаг 1</span></p>
+            <span class="span1-size">Размер</span>
+        </div>
+
+        <div class="small">
+            <div><img src="pizza-size/gq0oenbaqe0s0obr57d1dgi972jgp5wk.png" alt="маленькая" width="250px"></div>
+            <p class="small-p">маленькая</p>
+            <p class="small-price">13.90</p>
+            <p class="small-button-p" id="small-button"><button class="small-button">Выбрать</button></p>
+        </div>
+
+        <div class="mid">
+            <div><img src="pizza-size/gq0oenbaqe0s0obr57d1dgi972jgp5wk.png" alt="средняя" width="250px"></div>
+            <p class="mid-p">средняя</p>
+            <p class="mid-price">19.90</p>
+            <p class="mid-button-p" id="mid-button"><button class="mid-button">Выбрать</button></p>
+        </div>
+
+        <div class="big">
+            <div><img src="pizza-size/2gbf4g6vtqim8dhlquy3i2abgax1n4z0.png" alt="большая" width="250px"></div>
+            <p class="big-p">большая</p>
+            <p class="big-price">23.90</p>
+            <p class="big-button-p" id="big-button"><button class="big-button">Выбрать</button></p>
+        </div>
+
+
+        <div class="name2">
+            <p class="span2-p"><span class="span2">Шаг 2</span></p>
+            <span class="span2-size">Сыр</span>
+        </div>
+        <div class="mozarella">
+            <div><img src="cheze/mozarella.jpg" alt="моцарелла" width="250px" height="250px"></div>
+            <p class="mozarella-p">моцарелла</p>
+            <p class="mozarella-price">2.45</p>
+            <p class="mozarella-button-p" id="mozarella-button"><button class="mozarella-button">Выбрать</button></p>
+        </div>
+
+        <div class="feta">
+            <div><img src="cheze/feta.jpg" alt="фета" width="250px" height="250px"></div>
+            <p class="feta-p">фета</p>
+            <p class="feta-price">2.50</p>
+            <p class="feta-button-p" id="feta-button"><button class="feta-button">Выбрать</button></p>
+        </div>
+
+        <div class="slivochni">
+            <div><img src="cheze/slivochni.jpg" alt="сливочный" width="250px" height="250px"></div>
+            <p class="slivochni-p">сливочный</p>
+            <p class="slivochni-price">2.40</p>
+            <p class="slivochni-button-p" id="slivochni-button"><button class="slivochni-button">Выбрать</button></p>
+        </div>
+
+
+        <div class="name3">
+            <p class="span3-p"><span class="span3">Шаг 3</span></p>
+            <span class="span3-size">Мясо и овощи</span>
+        </div>
+        <div class="vetchina">
+            <div><img src="img/vetchina.jpg" alt="ветчина" width="250px" height="250px"></div>
+            <p class="vetchina-p">ветчина</p>
+            <p class="vetchina-price">2.40</p>
+            <p class="vetchina-button-p"><button class="vetchina-button">Выбрать</button></p>
+        </div>
+
+        <div class="salami">
+            <div><img src="img/salami.png" alt="салями" width="250px" height="250px"></div>
+            <p class="salami-p">салями</p>
+            <p class="salami-price">1.80</p>
+            <p class="salami-button-p"><button class="salami-button">Выбрать</button></p>
+        </div>
+
+        <div class="pomidor">
+            <div><img src="img/pomidor.jpg" alt="помидор" width="250px" height="250px"></div>
+            <p class="pomidor-p">помидор</p>
+            <p class="pomidor-price">1.20</p>
+            <p class="pomidor-button-p"><button class="pomidor-button">Выбрать</button></p>
+        </div>
+
+
+        <div class="name4">
+            <p class="span4-p"><span class="span4">Шаг 4</span></p>
+            <span class="span4-size">Соус</span>
+        </div>
+        <div class="cheze">
+            <div><img src="img/cheze.jpg" alt="сырный соус" width="250px" height="250px"></div>
+            <p class="cheze-p">сырный соус</p>
+            <p class="cheze-price">0.30</p>
+            <p class="cheze-button-p"><button class="cheze-button">Выбрать</button></p>
+        </div>
+
+        <div class="chesnok">
+            <div><img src="img/chesnok.jpg" alt="чесночный соус" width="250px" height="250px"></div>
+            <p class="chesnok-p">чесночный соус</p>
+            <p class="chesnok-price">0.30</p>
+            <p class="chesnok-button-p"><button class="chesnok-button">Выбрать</button></p>
+        </div>
+
+        <div class="ketchup">
+            <div><img src="img/ketchup.jpg" alt="кетчуп" width="250px" height="250px"></div>
+            <p class="ketchup-p">кетчуп</p>
+            <p class="ketchup-price">0.30</p>
+            <p class="ketchup-button-p"><button class="ketchup-button">Выбрать</button></p>
+        </div>
+    </div>
+    
+    <div class="order-is-processed" style="display: none;" id="order-is-processed">
+    <div ><p class="order-is-processed-p">Заказ оформлен</p></div> 
+    <img src="img/free-png.ru-39-340x340.png" alt="" width="100px" class="img"></div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
