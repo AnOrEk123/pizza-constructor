@@ -25,15 +25,19 @@
             <p class="order-sauce">4. Соус</p>
             <p class="order-sauce-p" id="order-sauce-p">Не выбрано</p>
             <p class="price">Цена</p>
-            <p class="price-p" id="price-p"></p>
+            <p class="price-p" id="price-p">0.00</p>
             <p class="order-button-p" id="order-button" style="display: none;"><button class="order-button" id="order-button" target="_blank">Заказать</button></p>
-            <img src="img/pizza1.png" alt="" class="pizza-img" id="pizza-img" width="100px" height="100px">
+            <img src="img/pizza1.png" alt="" class="pizza-img" id="pizza-img1" width="100px" height="100px" style="z-index: 1; display: inline-block;">
+            <img src="img/pizza2.png" alt="" class="pizza-img" id="pizza-img2" width="100px" height="100px" style="z-index: 0; display: none;">
+            <img src="img/pizza3.png" alt="" class="pizza-img" id="pizza-img3" width="100px" height="100px" style="z-index: 0; display: none;">
+            <img src="img/pizza4.png" alt="" class="pizza-img" id="pizza-img4" width="100px" height="100px" style="z-index: 0; display: none;">
+            <img src="img/pizza5.png" alt="" class="pizza-img" id="pizza-img5" width="100px" height="100px" style="z-index: 0; display: none;">
         </div>
         <div class="name">
             <p class="span1-p"><span class="span1">Шаг 1</span></p>
             <span class="span1-size">Размер</span>
         </div>
-
+<div class="sizes">
         <div class="small">
             <div><img src="pizza-size/gq0oenbaqe0s0obr57d1dgi972jgp5wk.png" alt="маленькая" width="250px"></div>
             <p class="small-p">маленькая</p>
@@ -54,12 +58,13 @@
             <p class="big-price">23.90</p>
             <p class="big-button-p" id="big-button"><button class="big-button">Выбрать</button></p>
         </div>
-
+    </div>
 
         <div class="name2">
             <p class="span2-p"><span class="span2">Шаг 2</span></p>
             <span class="span2-size">Сыр</span>
         </div>
+        <div class="chezzes">
         <div class="mozarella">
             <div><img src="cheze/mozarella.jpg" alt="моцарелла" width="250px" height="250px"></div>
             <p class="mozarella-p">моцарелла</p>
@@ -80,12 +85,13 @@
             <p class="slivochni-price">2.40</p>
             <p class="slivochni-button-p" id="slivochni-button"><button class="slivochni-button">Выбрать</button></p>
         </div>
-
+    </div>
 
         <div class="name3">
             <p class="span3-p"><span class="span3">Шаг 3</span></p>
             <span class="span3-size">Мясо и овощи</span>
         </div>
+        <div class="meats">
         <div class="vetchina">
             <div><img src="img/vetchina.jpg" alt="ветчина" width="250px" height="250px"></div>
             <p class="vetchina-p">ветчина</p>
@@ -106,12 +112,13 @@
             <p class="pomidor-price">1.20</p>
             <p class="pomidor-button-p"><button class="pomidor-button">Выбрать</button></p>
         </div>
-
+    </div>
 
         <div class="name4">
             <p class="span4-p"><span class="span4">Шаг 4</span></p>
             <span class="span4-size">Соус</span>
         </div>
+        <div class="sauces">
         <div class="cheze">
             <div><img src="img/cheze.jpg" alt="сырный соус" width="250px" height="250px"></div>
             <p class="cheze-p">сырный соус</p>
@@ -133,7 +140,7 @@
             <p class="ketchup-button-p"><button class="ketchup-button">Выбрать</button></p>
         </div>
     </div>
-    
+</div>
     <div class="order-is-processed" style="display: none;" id="order-is-processed">
     <div ><p class="order-is-processed-p">Заказ оформлен</p></div> 
     <img src="img/free-png.ru-39-340x340.png" alt="" width="100px" class="img"></div>
