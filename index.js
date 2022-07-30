@@ -120,10 +120,10 @@ pizzaConstructor.addEventListener('click', (event) => {
         }
     });
 
-    changePizzaImg1()
-    changePizzaImg2()
-    changePizzaImg3()
-    changePizzaImg4()
+    
+    
+    
+    changePizzaImg()
     
 });
 
@@ -157,10 +157,10 @@ chezzeConstructor.addEventListener('click', (event) => {
     addPrice()
     removePrice()
     enableButton()
-    changePizzaImg1()
-    changePizzaImg2()
-    changePizzaImg3()
-    changePizzaImg4()
+    
+    
+    
+    changePizzaImg()
     
 });
 
@@ -195,10 +195,10 @@ meatConstructor.addEventListener('click', (event) => {
         addPrice()
         removePrice()
         enableButton()
-        changePizzaImg1()
-        changePizzaImg2()
-        changePizzaImg3()
-        changePizzaImg4()
+        
+        
+        
+        changePizzaImg()
         }
     });
 });
@@ -221,10 +221,10 @@ sauceConstructor.addEventListener('click', (event) => {
             sauce.isChosen = false
         }
     });
-    changePizzaImg1()
-    changePizzaImg2()
-    changePizzaImg3()
-    changePizzaImg4()
+    
+    
+    
+    changePizzaImg()
     
     addPrice()
         removePrice()
@@ -239,10 +239,10 @@ document.getElementById('order-size-p').addEventListener('click', () => {documen
 a = 0
 addPrice()
 enableButton()
-changePizzaImg1()
-changePizzaImg2()
-changePizzaImg3()
-changePizzaImg4()
+
+
+
+changePizzaImg()
 
 if (sizes[0].isChosen === true) {sizes[0].isChosen = false}
  else if (sizes[1].isChosen === true) {sizes[1].isChosen = false}
@@ -255,10 +255,10 @@ document.getElementById('order-cheze-p').addEventListener('click', () => {docume
  b = 0
  addPrice()
  enableButton()
- changePizzaImg1()
- changePizzaImg2()
- changePizzaImg3()
- changePizzaImg4()
+ 
+ 
+ 
+ changePizzaImg()
  
  if (chezzes[0].isChosen === true) {chezzes[0].isChosen = false
     chezeArr.splice(chezeArr.indexOf('моцарелла'), 1)} 
@@ -271,10 +271,10 @@ document.getElementById('order-cheze-p').addEventListener('click', () => {docume
     c = 0
     addPrice()
     enableButton()
-    changePizzaImg1()
-    changePizzaImg2()
-    changePizzaImg3()
-    changePizzaImg4()
+    
+    
+    
+    changePizzaImg()
     
     if (chezzes[0].isChosen === true) {chezzes[0].isChosen = false
         chezeArr.splice(chezeArr.indexOf('моцарелла'), 1)}
@@ -290,10 +290,10 @@ document.getElementById('order-cheze-p').addEventListener('click', () => {docume
  d = 0
  addPrice()
  enableButton()
- changePizzaImg1()
- changePizzaImg2()
- changePizzaImg3()
- changePizzaImg4()
+ 
+ 
+ 
+ changePizzaImg()
  
  if (meats[0].isChosen === true) {meats[0].isChosen = false
     meatArr.splice(meatArr.indexOf('ветчина'), 1)} 
@@ -306,10 +306,10 @@ document.getElementById('order-cheze-p').addEventListener('click', () => {docume
  e = 0
  addPrice()
  enableButton()
- changePizzaImg1()
- changePizzaImg2()
- changePizzaImg3()
- changePizzaImg4()
+ 
+ 
+ 
+ changePizzaImg()
  
  if (meats[0].isChosen === true) {meats[0].isChosen = false
     meatArr.splice(meatArr.indexOf('ветчина'), 1)}
@@ -325,10 +325,10 @@ document.getElementById('order-sauce-p').addEventListener('click', () => {docume
 f = 0
 addPrice()
 enableButton()
-changePizzaImg1()
-changePizzaImg2()
-changePizzaImg3()
-changePizzaImg4()
+
+
+
+changePizzaImg()
 
 if (sauces[0].isChosen === true) {sauces[0].isChosen = false;}
  else if (sauces[1].isChosen === true) {sauces[1].isChosen = false}
@@ -351,99 +351,108 @@ document.getElementById('price-p').innerHTML = priceAll;
 function removePrice () {if (document.getElementById('order-size-p').textContent === 'Не выбрано') { 
     document.getElementById('price').textContent = (priceAll - a).toFixed(2)
     enableButton()
-    changePizzaImg1()
-    changePizzaImg2()
-    changePizzaImg3()
-    changePizzaImg4()
+    
+    
+    
+    changePizzaImg()
     
 }
     else if (document.getElementById('order-cheze-p').textContent === 'Не выбрано') {
         document.getElementById('price-p').textContent = (priceAll - b).toFixed(2)
         enableButton()
-        changePizzaImg1()
-        changePizzaImg2()
-        changePizzaImg3()
-        changePizzaImg4()
+        
+        
+        
+        changePizzaImg()
         
     }
     else if (document.getElementById('order-cheze-p2').textContent === 'Не выбрано') {
         document.getElementById('price-p').textContent = (priceAll - c).toFixed(2)
         enableButton()
-        changePizzaImg1()
-        changePizzaImg2()
-        changePizzaImg3()
-        changePizzaImg4()
+        
+        
+        
+        changePizzaImg()
         
     }
     else if (document.getElementById('order-meat-p').textContent === 'Не выбрано') {
         document.getElementById('price-p').textContent = (priceAll - d).toFixed(2)
         enableButton()
-        changePizzaImg1()
-        changePizzaImg2()
-        changePizzaImg3()
-        changePizzaImg4()
+        
+        
+        
+        changePizzaImg()
         
     }
     else if (document.getElementById('order-meat-p2').textContent === 'Не выбрано') {
         document.getElementById('price-p').textContent = (priceAll - e).toFixed(2)
         enableButton()
-        changePizzaImg1()
-        changePizzaImg2()
-        changePizzaImg3()
-        changePizzaImg4()
+        
+        
+        
+        changePizzaImg()
         
     }
     else if (document.getElementById('order-sauce-p').textContent === 'Не выбрано') {
         document.getElementById('price-p').textContent = (priceAll - f).toFixed(2)
         enableButton()
-        changePizzaImg1()
-        changePizzaImg2()
-        changePizzaImg3()
-        changePizzaImg4()
+        
+        
+        
+        changePizzaImg()
         
     }}
     
 
   function enableButton() {if ((document.getElementById("order-size-p").textContent == "маленькая" || document.getElementById("order-size-p").textContent == "средняя" || document.getElementById("order-size-p").textContent == "большая") && (document.getElementById("order-cheze-p").textContent == "моцарелла" || document.getElementById("order-cheze-p").textContent == "фета" || document.getElementById("order-cheze-p").textContent == "сливочный" || document.getElementById("order-cheze-p2").textContent == "моцарелла" || document.getElementById("order-cheze-p2").textContent == "фета" || document.getElementById("order-cheze-p2").textContent == "сливочный") && (document.getElementById("order-meat-p").textContent == "салями" || document.getElementById("order-meat-p").textContent == "помидоры" || document.getElementById("order-meat-p").textContent == "ветчина" || document.getElementById("order-meat-p2").textContent == "салями" || document.getElementById("order-meat-p2").textContent == "помидоры" || document.getElementById("order-meat-p2").textContent == "ветчина") && (document.getElementById("order-sauce-p").textContent == "чесночный соус" || document.getElementById("order-sauce-p").textContent == "сырный соус" || document.getElementById("order-sauce-p").textContent == "кетчуп")) {document.getElementById('order-button').style.display = "inline-block"
   console.log(obj)
- 
   }else {document.getElementById('order-button').style.display = "none"}}
 
-  
-
-  function changePizzaImg1() {if (sizes[0].isChosen === true || sizes[1].isChosen === true || sizes[2].isChosen === true) {document.getElementById('pizza-img2').style = "z-index: 2;"
-  document.getElementById('pizza-img2').style.display = "inline-block"
-  document.getElementById('pizza-img1').style.display = 'none'
-}}
 
 
 
-function changePizzaImg2() {if (chezzes[0].isChosen === true || chezzes[1].isChosen === true || chezzes[2].isChosen === true) {document.getElementById('pizza-img3').style = "z-index: 3;"
-  document.getElementById('pizza-img3').style.display = "inline-block"
-  document.getElementById('pizza-img2').style.display = 'none'
-  document.getElementById('pizza-img1').style.display = 'none'
-}}
+function changePizzaImg() {if ((document.getElementById("order-size-p").textContent == "маленькая" || document.getElementById("order-size-p").textContent == "средняя" || document.getElementById("order-size-p").textContent == "большая") && (document.getElementById("order-cheze-p").textContent == "моцарелла" || document.getElementById("order-cheze-p").textContent == "фета" || document.getElementById("order-cheze-p").textContent == "сливочный" || document.getElementById("order-cheze-p2").textContent == "моцарелла" || document.getElementById("order-cheze-p2").textContent == "фета" || document.getElementById("order-cheze-p2").textContent == "сливочный") && (document.getElementById("order-meat-p").textContent == "салями" || document.getElementById("order-meat-p").textContent == "помидоры" || document.getElementById("order-meat-p").textContent == "ветчина" || document.getElementById("order-meat-p2").textContent == "салями" || document.getElementById("order-meat-p2").textContent == "помидоры" || document.getElementById("order-meat-p2").textContent == "ветчина") && (document.getElementById("order-sauce-p").textContent == "чесночный соус" || document.getElementById("order-sauce-p").textContent == "сырный соус" || document.getElementById("order-sauce-p").textContent == "кетчуп")) {document.getElementById('pizza-img5').style = "z-index: 5;"
+document.getElementById('pizza-img5').style.display = "inline-block"
+document.getElementById('pizza-img4').style.display = 'none'
+document.getElementById('pizza-img3').style.display = 'none'
+document.getElementById('pizza-img2').style.display = 'none'
+document.getElementById('pizza-img1').style.display = 'none'}
 
-
-function changePizzaImg3() {if (meats[0].isChosen === true || meats[1].isChosen === true || meats[2].isChosen === true) {document.getElementById('pizza-img4').style = "z-index: 4;"
-  document.getElementById('pizza-img4').style.display = "inline-block"
-  document.getElementById('pizza-img3').style.display = 'none'
-  document.getElementById('pizza-img2').style.display = 'none'
-  document.getElementById('pizza-img1').style.display = 'none'
-}}
-
-
-function changePizzaImg4() {if (sauces[0].isChosen === true || sauces[1].isChosen === true || sauces[2].isChosen === true) {document.getElementById('pizza-img5').style = "z-index: 5;"
-  document.getElementById('pizza-img5').style.display = "inline-block"
-  document.getElementById('pizza-img4').style.display = 'none'
-  document.getElementById('pizza-img3').style.display = 'none'
-  document.getElementById('pizza-img2').style.display = 'none'
-  document.getElementById('pizza-img1').style.display = 'none'
-}}
-
-
-
-
+                           
+                           
+else if ((document.getElementById("order-size-p").textContent == "маленькая" || document.getElementById("order-size-p").textContent == "средняя" || document.getElementById("order-size-p").textContent == "большая") && (document.getElementById("order-cheze-p").textContent == "моцарелла" || document.getElementById("order-cheze-p").textContent == "фета" || document.getElementById("order-cheze-p").textContent == "сливочный" || document.getElementById("order-cheze-p2").textContent == "моцарелла" || document.getElementById("order-cheze-p2").textContent == "фета" || document.getElementById("order-cheze-p2").textContent == "сливочный") && (document.getElementById("order-meat-p").textContent == "салями" || document.getElementById("order-meat-p").textContent == "помидоры" || document.getElementById("order-meat-p").textContent == "ветчина" || document.getElementById("order-meat-p2").textContent == "салями" || document.getElementById("order-meat-p2").textContent == "помидоры" || document.getElementById("order-meat-p2").textContent == "ветчина")) 
+{document.getElementById('pizza-img4').style = "z-index: 4;"
+document.getElementById('pizza-img4').style.display = "inline-block"
+document.getElementById('pizza-img3').style.display = 'none'
+document.getElementById('pizza-img2').style.display = 'none'
+document.getElementById('pizza-img1').style.display = 'none'
+document.getElementById('pizza-img5').style.display = 'none'}
+                           
+                           
+                           
+else if ((document.getElementById("order-size-p").textContent == "маленькая" || document.getElementById("order-size-p").textContent == "средняя" || document.getElementById("order-size-p").textContent == "большая") && (document.getElementById("order-cheze-p").textContent == "моцарелла" || document.getElementById("order-cheze-p").textContent == "фета" || document.getElementById("order-cheze-p").textContent == "сливочный" || document.getElementById("order-cheze-p2").textContent == "моцарелла" || document.getElementById("order-cheze-p2").textContent == "фета" || document.getElementById("order-cheze-p2").textContent == "сливочный")) 
+{document.getElementById('pizza-img3').style = "z-index: 3;"
+document.getElementById('pizza-img3').style.display = "inline-block"
+document.getElementById('pizza-img2').style.display = 'none'
+document.getElementById('pizza-img1').style.display = 'none'
+document.getElementById('pizza-img4').style.display = 'none'}
+                           
+                           
+                           
+else if (document.getElementById("order-size-p").textContent == "маленькая" || document.getElementById("order-size-p").textContent == "средняя" || document.getElementById("order-size-p").textContent == "большая") 
+{document.getElementById('pizza-img2').style = "z-index: 2;"
+document.getElementById('pizza-img2').style.display = "inline-block"
+document.getElementById('pizza-img1').style.display = 'none'
+document.getElementById('pizza-img3').style.display = 'none'
+document.getElementById('pizza-img4').style.display = 'none'
+document.getElementById('pizza-img5').style.display = 'none'}
+                           
+                           
+else {document.getElementById('pizza-img2').style.display = 'none'
+document.getElementById('pizza-img1').style.display = 'inline-block'
+document.getElementById('pizza-img3').style.display = 'none'
+document.getElementById('pizza-img4').style.display = 'none'
+document.getElementById('pizza-img5').style.display = 'none'}}
 
 
 
@@ -451,21 +460,3 @@ function changePizzaImg4() {if (sauces[0].isChosen === true || sauces[1].isChose
 document.getElementById('order-button').addEventListener('click', () => {
     document.getElementById('order-is-processed').style.display = 'inline-block'
   })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
